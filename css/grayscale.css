@@ -7,8 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
+    font-family: 'Open Sans', sans-serif;     color: #fff;
     background-color: #F8F8F8;
 }
 
@@ -17,15 +16,24 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
+h1  {
+    color: #fff;
+
+
+},
+h2 {
+    color: #fff;
+
+
+
+},
 h3,
 h4,
 h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
     color: #000;
@@ -140,7 +148,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/port-bg.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -159,6 +167,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    folor: #fff;
 }
 
 @media(min-width:767px) {
