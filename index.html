@@ -143,98 +143,11 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Twitter Api Application</h2>
                 <p> This application was built in PHP. It demonstrates the use of an API to call different Twitter REST functions and displays them in a table. </p>
-                <?php echo "test"?>
-    
-				<div class="accordion" id="accordion2">
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                            <h1>Mentions</h1>
-                          </a>
-                        </div>
-                            <h3>Mentions of Leonard Lance </h3>
-                        <div id="collapseOne" class="accordion-body collapse in" >
-                          <div class="accordion-inner">
-                              
-                              <?php
-                                    ini_set('display_errors', 'On');
-                                    require 'twitter-app/autoloader.php';
-                                    $url = 'search/tweets.json';
-                                    $getfield = '?q=replanceNJ7';
-                                    $settings = \Classes\Config::password();
-                                    $object3 = \Classes\TwitterFunctions::get_field($url, $getfield, $settings);
-                                    $feed = \Classes\HtmlFunctions::show_mentions($object3);
-                            ?>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="accordion-group">
-                        <div class="accordion-heading">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                            <h1>Friends of Lifehacker</h1>
-                          </a>
-                        </div>
-                        <div id="collapseTwo" class="accordion-body collapse">
-                          <div class="accordion-inner">
-                              <?php
-                                    $url = 'friends/list.json';
-                                    $getfield = '?screen_name=lifehacker';
-                                    $settings = \Classes\Config::password();
-                                    $object2 = \Classes\TwitterFunctions::get_field($url, $getfield, $settings);
-                                    $feed = \Classes\HtmlFunctions::show_friends($object2);
-                              ?>
-                          </div>
-                        </div>
-                      </div>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
-                            <h1>Favorite Tweets</h1>
-                          </a>
-                        </div>
-                        <div id="collapse3" class="accordion-body collapse">
-                          <div class="accordion-inner">
-                              <?php
-                              $url = 'statuses/user_timeline.json';
-                                    $getfield = '?screen_name=gizmodo';
-                                    $settings = \Classes\Config::password();
-                                    $object4 = \Classes\TwitterFunctions::get_field($url, $getfield, $settings);
-                                    $feed = \Classes\HtmlFunctions::print_Favoritetweet($object4);
-                                   
-                            ?>
-                              
-                          </div>
-                        </div>
-                      </div>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
-                            <h1>Tweet</h1>
-                          </a>
-                        </div>
-                        <div id="collapse4" class="accordion-body collapse">
-                          <div class="accordion-inner">
-                              <?php
-                              $url = 'statuses/update.json';
-                                    $postfield = array(
-                                            'status' => 'posting from another app!'
-                                    );
-                                    $settings = \Classes\Config::password();
-                                    $object = \Classes\TwitterFunctions::post_field($url, $postfield, $settings);
-                                    \Classes\HtmlFunctions::tweet_success();
-                            ?>
-                              
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                     
-                
                 
                 
                 <ul class="list-inline">
                     <li>
-                      <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-2x"</i>View Source Code</a>
+                      <a href="https://david.schmdt.com/twitter-app.php" class="btn btn-default btn-lg"><i class="fa fa-github fa-2x"</i>View Source Code</a>
                     </li>
             </div>
         </div>
