@@ -22,9 +22,7 @@ h1  {
 
 },
 h2 {
-    color: #fff;
-
-
+    color: #000;
 
 },
 h3,
@@ -260,7 +258,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .download-section {
@@ -283,7 +281,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 20px;
     }
 
     .download-section {
@@ -371,4 +369,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.about-links  {
+        padding-top: 20px;
+        padding: 10px;
+
 }
